@@ -6,7 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="javascript.js"></script>
+    <script src="javaScript.js"></script>
     <link rel="stylesheet" href="estilos.css">
 
     <!-- Bootstrap CSS v5.2.1 -->
@@ -46,24 +46,38 @@
             <img src=" imagen/fondo-gris.jpg" class="card-img" alt="Fondo-perdil">
             <div class="card-body">
                 <div class="foto-perfil">
-                    <img class="perfil" src="imagen/foto-perfil.png" alt="Foto-de-perfil">
+                    <div>
+                        <!-- <label for="subir-foto">Subir foto</label> -->
+                        <input type="file" alt="foto-perfil> alt=">
+                    </div>
                     <div>
                         <img class="editar" src="imagen/editar.png" alt="">
                     </div>
                 </div>
-                <table class="table">
-                    <tr>
-                        <th>
-                            <h3>Nombre Apellido</h3>
-                        </th>
-                    </tr>
-                    <tr>
-                        <td> Situacion laboral </td>
-                    </tr>
-                    <tr>
-                        <td> Localidad </td>
-                    </tr>
-                </table>
+                <button class="btn btn-success" onclick="evento()">Editar</button>
+                <button class="btn btn-primary disabled" onclick="guardar()" id="botonGuardar">Guardar</button>
+                <form action="">
+                    <table class="table">
+                        <tr>
+                            <th>
+                                <label for="nombreCompleto"></label>
+                                <input id="nombreCompleto" type="text" placeholder="Nombre y apellido" disabled>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="situacionLaboral"></label>
+                                <input id="situacionLaboral" type="text" placeholder="Situacion laboral" disabled>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="localidad"></label>
+                                <input id="localidad" type="text" placeholder="localidad" disabled>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
             </div>
         </div>
 
@@ -74,10 +88,15 @@
                 <div class="contenedor-acerca">
                     <h1>Acerca de</h1>
                     <div>
-                        <img class="editar" src="imagen/editar.png" alt="">
+                        <button class="btn btn-success" onclick="editarDescripcion()">Editar</button>
+                        <button id="descripcion" class="btn btn-primary disabled"
+                            onclick="guardarDescripcion()">Guardar</button>
                     </div>
                 </div>
-                <p id="acercaDe"> INFO </p>
+                <div class="textarea">
+                    <textarea id="informacion" cols="30" rows="10" placeholder="Ingresar informacion personal"
+                        disabled></textarea>
+                </div>
             </div>
         </div>
 
@@ -89,14 +108,18 @@
                 <div class="contenedor-exp">
                     <h2>Formación academica</h2>
                     <div>
-                        <img class="editar" src="imagen/mas.png" alt="Agregar">
+                        <button class="boton-secreto">
+                            <img class="editar" src="imagen/mas.png" alt="Agregar">
+                        </button>
                     </div>
                 </div>
                 <!-- Experiencia -->
                 <div class="contenedor-exp">
                     <h2>Experiencia</h2>
                     <div>
-                        <img class="editar" src="imagen/mas.png" alt="Agregar">
+                        <button class="boton-secreto">
+                            <img class="editar" src="imagen/mas.png" alt="Agregar">
+                        </button>
                     </div>
                 </div>
             </div>
