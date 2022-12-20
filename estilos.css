@@ -35,6 +35,11 @@
     justify-content: space-between;
     align-items: baseline;
 }
+.contenedor-academia{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
 .foto-perfil{
     display: flex;
     align-items: center;
