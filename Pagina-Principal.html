@@ -47,8 +47,8 @@
             <div class="card-body">
                 <div class="foto-perfil">
                     <div>
-                        <!-- <label for="subir-foto">Subir foto</label> -->
-                        <input type="file" alt="foto-perfil> alt=">
+                        <img src="" alt="Foto perfil">
+
                     </div>
                     <div>
                         <img class="editar" src="imagen/editar.png" alt="">
@@ -106,44 +106,36 @@
             <div class="card-body">
                 <!-- Formacion academica -->
                 <div class="contenedor-exp">
-                    <h2>Formación academica</h2>
                     <div>
-                        <button class="boton-secreto">
-                            <img class="editar" src="imagen/mas.png" alt="Agregar">
+                        <h2>Formación academica</h2>
+                    </div>
+                    <div>
+                        <button id="botonOculto" class="boton-secreto" onclick="agregarAlgo(), esconder()">
+                            <img id="editar" class="editar" src="imagen/mas.png" alt="Agregar">
                         </button>
                     </div>
+                </div>
+                <div id="contenedor-exp">
                 </div>
                 <!-- Experiencia -->
-                <div class="contenedor-exp">
+                <div class="contenedor-academia">
                     <h2>Experiencia</h2>
                     <div>
-                        <button class="boton-secreto">
+                        <button id="boton2" class="boton-secreto" onclick="agregarOtraCosa(), esconder2()">
                             <img class="editar" src="imagen/mas.png" alt="Agregar">
                         </button>
                     </div>
                 </div>
+                <div id="contenedor-academia"></div>
             </div>
+
+            
         </div>
 
         <!-- HARD AND SOFT SKILLS -->
         <div class="card tarjeta-vista">
             <div class="card-body">
                 <h2>Hard Skills & Soft Skills</h2>
-                <div class="row tarjetas">
-                    <div class="col-sm-4 hs-skill">
-                        Analisis de Situacion
-                        <img class="perfil-dos" src="imagen/grafico.png" alt="grafico">
-                    </div>
-                    <div class="col-sm-4 hs-skill">
-                        Toma de Decisiones
-                        <img class="perfil-dos" src="imagen/grafico.png" alt="grafico">
-                    </div>
-                    <div class="col-sm-4 hs-skill">
-                        Trabajo en equipo
-                        <img class="perfil-dos" src="imagen/grafico.png" alt="grafico">
-                    </div>
-                </div>
-                <!-- SEGUNDA FILA -->
                 <div class="row tarjetas">
                     <div class="col-sm-4 hs-skill">
                         Analisis de Situacion
@@ -169,7 +161,9 @@
                 <div class="contenedor-exp">
                     <h4>Agregar un proyecto</h4>
                     <div>
-                        <img class="editar" src="imagen/mas.png" alt="Agregar">
+                        <button class="boton-secreto">
+                            <img class="editar" src="imagen/mas.png" alt="Agregar">
+                        </button>
                     </div>
                 </div>
             </div>
